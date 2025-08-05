@@ -14,17 +14,33 @@
 .pantalla .fondo {
     width: 100%;
 }
-
+.mover{
+    animation: movimiento 2s ease infinite;
+}
+@keyframes movimiento {
+    0%{transform: translateX(0); position: 1; }
+    50%{transform: translateX(-20px);}
+    100%{transform: translateX(0px); position: 0;}
+}
 .bloque1 {
     position: absolute;
     top: 47%;
     left: 20%;
+    animation: movimiento 0.6s ease infinite;
 }
-
+.moverr{
+    animation: movimiento 2s ease infinite;
+}
+@keyframes movimiento {
+    0%{transform: translateX(0); position: 1; }
+    50%{transform: translateX(-20px);}
+    100%{transform: translateX(0px); position: 0;}
+}
 .bloque2 {
     position: absolute;
     top: 35%;
     left: 52%;
+    animation: movimiento 1s ease infinite;
 }
 
 .moneda1 {
